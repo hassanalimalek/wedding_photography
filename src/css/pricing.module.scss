@@ -1,0 +1,125 @@
+// Pricing Carts
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+// General
+.pricing {
+  text-align: center;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.pricingWrapper {
+  padding: 5rem 0;
+  width: 100%;
+}
+.title {
+  font-size: 2.5rem;
+  font-family: cormorant garamond, serif;
+  line-height: 1.3em;
+  letter-spacing: 0.2em;
+}
+.subtitle {
+  text-transform: none;
+  font-style: italic;
+  color: #84847c;
+  font-family: cormorant garamond, serif;
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+.pricingPlans {
+  //   border: 1px solid #111;
+  width: 100%;
+}
+.pricingPlan {
+  //   border: 1px solid #111;
+  margin-bottom: 2rem;
+  h2 {
+    font-family: cormorant garamond, serif;
+  }
+  p {
+    font-family: Muli, sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+    font-weight: 300;
+    line-height: 1.6em;
+  }
+}
+.pricingContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.pricingTxt {
+  font-size: 2rem;
+  font-family: 'Merriweather', serif;
+  align-self: center;
+  margin-left: 1rem;
+}
+.pkrLogo {
+  width: 55px !important;
+}
+.checkIcon {
+  font-size: 1.5rem;
+  color: rgb(150, 221, 44);
+}
+.crossIcon {
+  color: red;
+  font-size: 1.5rem;
+}
+
+// Pricing Plan Basic
+.pricingPlanBasic {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: all 1s;
+  .pricingPlanTitle {
+    background-color: #f72585;
+    color: white;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+  }
+  .pricingDetails {
+    padding: 2rem;
+  }
+}
+.pricingPlanBasic:hover {
+  box-shadow: 20px 30px 42px rgba(0, 0, 0, 0.25),
+    0 30px 30px rgba(0, 0, 0, 0.25);
+}
+
+// Pricing Plan Standard
+.pricingPlanStandard {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: 1s all;
+  .pricingPlanTitle {
+    background-color: #4cc9f0;
+    color: white;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+  }
+  .pricingDetails {
+    padding: 2rem;
+  }
+}
+.pricingPlanStandard:hover {
+  box-shadow: 20px 30px 42px rgba(0, 0, 0, 0.25),
+    0 30px 30px rgba(0, 0, 0, 0.25);
+}
+
+// Pricing Plan Premium
+.pricingPlanPremium {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transition: all 1s;
+
+  .pricingPlanTitle {
+    background-color: #3a0ca3;
+    color: white;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+  }
+  .pricingDetails {
+    padding: 2rem 2rem 3rem 2rem;
+  }
+}
+.pricingPlanPremium:hover {
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3), 0 30px 35px rgba(0, 0, 0, 0.25);
+}

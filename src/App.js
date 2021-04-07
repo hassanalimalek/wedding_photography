@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/navbar';
+import LandingCarousel from './components/landingCarousel';
+import GeneralPhotos from './components/generalPhotos';
+import SampleVideo from './components/sampleVideo';
+import Pricing from './components/pricing';
+import PicturePortfolio from './components/picturePorfolio';
+import GetInTouchForm from './components/getInTouchForm';
+import Footer from './components/footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <LandingCarousel />
+      <GeneralPhotos />
+      <SampleVideo />
+      <Pricing />
+      <PicturePortfolio />
+      <GetInTouchForm />
+      <Footer />
     </div>
   );
 }

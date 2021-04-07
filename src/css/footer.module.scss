@@ -1,0 +1,77 @@
+.footer {
+  background-color: #282c2f;
+  color: white;
+}
+.footerWrapper {
+  width: 90%;
+  margin: auto;
+  padding: 1rem 0;
+}
+.footerDivOne {
+  //   border: 1px solid red;
+  //   margin-bottom: 1rem;
+}
+
+.iconDiv {
+  display: flex;
+  //   border: 1px solid blue;
+}
+.icon {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  //   border: 1px solid green;
+}
+.icon:hover {
+  color: green;
+}
+.iconTxt {
+  font-size: 1.5rem;
+  align-self: center;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.075rem;
+  font-weight: 300;
+  padding-top: 0.75rem;
+  //   border: 1px solid red;
+}
+
+.footerDivTwo {
+  //   border: 1px solid red;
+}
+.aboutTitle {
+  font-weight: 400;
+  letter-spacing: 0.075rem;
+}
+.aboutParagraph {
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  transition: all 1s;
+  h4 {
+    margin-right: 1.5rem;
+    transition: all 0.6s;
+    font-size: 2rem;
+  }
+}
+.fbIcon:hover {
+  color: #4267b2;
+}
+.igIcon:hover {
+  color: #8a3ab9;
+}
+.ytIcon:hover {
+  color: #ff0000;
+}
+
+@media (max-width: 600px) {
+  .footerWrapper {
+    width: 100%;
+  }
+  .footerDivOne {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,106 @@
+/* Navbar */
+
+.navbar {
+  // background-color: #777 !important;
+  // background-color: transparent !important;
+  background-color: #282c2f !important;
+  color: white;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+.brandLogo {
+  width: 50px;
+}
+ul {
+  list-style-type: none;
+  margin-top: 0.5rem;
+}
+.mainNavOptions {
+  li {
+    display: inline-block;
+  }
+  a {
+    margin-right: 1.5rem;
+    padding-bottom: 0.25rem;
+    cursor: pointer;
+  }
+  a:hover {
+    border-bottom: 1px solid #111;
+  }
+}
+
+// Toggle Btn
+.toggleBtn {
+  border: none;
+  .togglerLineOne,
+  .togglerLineTwo,
+  .togglerLineThree {
+    height: 5px;
+    transition: all 1s;
+    background-color: #fff;
+    margin-bottom: 0.3rem;
+  }
+  .togglerLineOne {
+    width: 25px;
+  }
+  .togglerLineTwo {
+    width: 35px;
+  }
+  .togglerLineThree {
+    width: 50px;
+  }
+}
+.toggleBtn:hover {
+  .togglerLineOne {
+    width: 50px;
+  }
+  .togglerLineTwo {
+    width: 50px;
+  }
+}
+
+@media (max-width: 980px) {
+  ul {
+    margin-top: 0;
+  }
+  .mainNavOptions {
+    // border: 1px solid #111;
+    ul {
+      display: block;
+      margin-bottom: 0 !important;
+      margin-top: 0.5rem;
+      padding: none !important;
+    }
+    li {
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+    a {
+      padding-bottom: 0.5rem;
+      cursor: pointer;
+    }
+    a:hover {
+      border-bottom: 1px solid #111;
+    }
+  }
+  .infoBtn {
+    ul {
+      display: block;
+      margin-bottom: 0 !important;
+      padding: none !important;
+    }
+    li {
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+    a {
+      padding-bottom: 0.5rem;
+      cursor: pointer;
+    }
+    a:hover {
+      border-bottom: 1px solid #111;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+// Landing Carousel
+
+.landingCarouselContainer {
+  padding-top: 58px;
+  height: 100vh !important;
+}
+.carousel {
+  height: 100% !important;
+}
+
+.carouselItem {
+  background-color: black;
+  height: 100%;
+  min-height: 350px;
+}
+.carouselItem1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../assets/sliderImages/slider1.jpg') no-repeat center/cover fixed !important;
+}
+.carouselItem2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../assets/sliderImages/slider2.jpg') no-repeat center/cover fixed !important;
+}
+.carouselItem3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../assets/sliderImages/slider3.jpg') no-repeat center/cover fixed !important;
+}
+
+// Carousel Item Text
+.caption {
+  height: 50vh;
+  letter-spacing: 0.05rem;
+  h1 {
+    font-family: 'Dancing Script';
+    font-size: 4rem;
+  }
+  p {
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  a {
+    border: 1px solid #fff;
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
+  }
+}
+
+// Carousel Btn
+.carouselBtn {
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  position: relative;
+  padding: 10px 20px;
+  //   background: white;
+  color: #fff;
+  font-size: 1.5rem;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+  &:after,
+  &:before {
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+  }
+  &:after {
+    top: -1px;
+    left: -1px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+  }
+  &:before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+  &:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    // background:rgba(0,0,0,.5);
+    // color:white;
+    &:before,
+    &:after {
+      width: 100%;
+      height: 100%;
+      // border-color:white;
+    }
+  }
+}

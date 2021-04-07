@@ -1,0 +1,128 @@
+.sampleVideo {
+  background-color: #f4f0ed;
+}
+.sampleVideoWrapper {
+  width: 90%;
+  //   border: 1px solid #111;
+  margin: auto;
+  text-align: center;
+  padding: 5rem 0;
+  * {
+    outline: none;
+  }
+}
+.txtDiv {
+  width: 50%;
+  margin: auto;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5em;
+  letter-spacing: 0.15em;
+  margin-bottom: 4rem;
+}
+
+.videoDiv {
+  display: grid;
+  //   margin-top: 2rem;
+  place-items: center;
+  min-height: 600px;
+  width: 100%;
+  margin: auto;
+}
+
+.countUpDiv {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.countUpItem {
+  flex: 1;
+  font-family: 'Cormorant Garamond', sans-serif;
+  span {
+    font-family: 'Dancing Script';
+    h4 {
+      font-size: 2rem !important;
+    }
+    margin: 0.5rem;
+  }
+}
+
+// Play Icon
+.playicon {
+  width: 100px;
+  height: 100px;
+}
+
+.circle {
+  stroke: red;
+  stroke-dasharray: 00;
+  stroke-dashoffset: 600;
+  -webkit-transition: all 0.5s ease-in-out;
+  opacity: 0.3;
+}
+
+.playBut {
+  /*  border: 1px solid red;*/
+  display: inline-block;
+  -webkit-transition: all 0.5s ease;
+
+  .triangle {
+    -webkit-transition: all 0.7s ease-in-out;
+    stroke-dasharray: 240;
+    stroke-dashoffset: 480;
+    stroke: #000;
+    transform: translateY(0);
+  }
+
+  &:hover {
+    .triangle {
+      stroke-dashoffset: 0;
+      opacity: 1;
+      stroke: #fff;
+      animation: nudge 0.7s ease-in-out;
+
+      @keyframes nudge {
+        0% {
+          transform: translateX(0);
+        }
+        30% {
+          transform: translateX(-5px);
+        }
+        50% {
+          transform: translateX(5px);
+        }
+        70% {
+          transform: translateX(-2px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+    }
+
+    .circle {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sampleVideoWrapper {
+    width: 95%;
+  }
+  .videoDiv {
+    width: 100%;
+  }
+  .countUpItem {
+    flex: 1;
+
+    h4 {
+      font-size: 1rem !important;
+    }
+  }
+  .txtDiv {
+    width: 90%;
+    margin-bottom: 4rem;
+  }
+}
