@@ -16,8 +16,8 @@ function App() {
       <LandingCarousel />
       <GeneralPhotos />
       <SampleVideo />
-      <Pricing />
       <PicturePortfolio />
+      <Pricing />
       <GetInTouchForm />
       <Footer />
     </div>
