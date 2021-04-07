@@ -11,17 +11,14 @@ import {Container, Row, Col} from 'react-bootstrap';
 
 function Index() {
   // Getting Image with the fade and hover scale animation
-  let getImage = (imgName, fadeEffect) => {
-    return fadeEffect === 'left' ? (
-      <Fade left>
-        <img alt="Wedding 1" src={imgName} />
-      </Fade>
-    ) : (
-      <Fade right>
-        <img alt="Wedding  2" src={imgName} />
-      </Fade>
-    );
-  };
+  // let getImage = (imgName, fadeEffect) => {
+  //   return fadeEffect === 'left' ? (
+
+  //     // <Fade right>
+  //     <img alt="Wedding  2" src={imgName} />
+  //     // </Fade>
+  //   );
+  // };
 
   return (
     <div className={styles.generalPhotos}>
@@ -35,13 +32,17 @@ function Index() {
                 accusantium doloremque laudantium veritatis
               </p>
               <div className={cx(styles.imgDiv)}>
-                {getImage(img1, 'left')}
+                <Fade left>
+                  <img alt="Wedding 1" src={img1} />
+                </Fade>
                 <p className={styles.imgDivTitle}>Interior</p>
                 <h3 className={styles.imgDivSubTitle}>Bridal Bonquet</h3>
               </div>
             </Col>
             <Col sm={12} md={6} className={styles.topDivTwo}>
-              {getImage(img2, 'right')}
+              <Fade right>
+                <img alt="Wedding 1" src={img2} />
+              </Fade>
               <p className={styles.imgDivTitle}>Interior</p>
               <h3 className={styles.imgDivSubTitle}>Bridal Bonquet</h3>
             </Col>
@@ -53,14 +54,18 @@ function Index() {
           <Row>
             <Col sm={12} md={6} className={cx(styles.bottomDivOne)}>
               <div className={cx(styles.imgDiv)}>
-                {getImage(img3, 'left')}
+                <Fade left>
+                  <img alt="Wedding 1" src={img3} />
+                </Fade>
                 <p className={styles.imgDivTitle}>Interior</p>
                 <h3 className={styles.imgDivSubTitle}>Capture Emotions</h3>
               </div>
             </Col>
             <Col sm={12} md={6} className={styles.bottomDivTwo}>
               <div className={cx(styles.imgDiv)}>
-                {getImage(img4, 'right')}
+                <Fade right>
+                  <img alt="Wedding 1" src={img4} />
+                </Fade>
                 <p className={styles.imgDivTitle}>Interior</p>
                 <h3 className={styles.imgDivSubTitle}>Capture Memories</h3>
               </div>

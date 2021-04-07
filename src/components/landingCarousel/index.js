@@ -14,7 +14,7 @@ function Index() {
   const fadeInUpAnimation = keyframes`${fadeInUp}`;
 
   const FadeInUpDiv = styled.div`
-    animation: 4s ${fadeInUpAnimation};
+    animation: 2s ${fadeInUpAnimation};
   `;
 
   return (
