@@ -1,4 +1,5 @@
 import './App.css';
+import {useEffect} from 'react';
 import Navbar from './components/navbar';
 import LandingCarousel from './components/landingCarousel';
 import GeneralPhotos from './components/generalPhotos';
@@ -8,7 +9,11 @@ import PicturePortfolio from './components/picturePorfolio';
 import GetInTouchForm from './components/getInTouchForm';
 import Footer from './components/footer';
 
-function App() {
+function App(props) {
+  useEffect(() => {
+    props.hideLoader();
+  });
+
   return (
     <div>
       <Navbar />
