@@ -21,14 +21,24 @@ function Index() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className={cx(styles.mainNavOptions, 'm-auto md-m')}>
           <ul>
-            <li>Home</li>
-            <li>Pages</li>
-            <li>Portfolio</li>
-            <li>Gallery</li>
+            <li>
+              <a>Home</a>
+            </li>
+            <li>
+              <a>Pages</a>
+            </li>
+            <li>
+              <a>Portfolio</a>
+            </li>
+            <li>
+              <a>Gallery</a>
+            </li>
           </ul>
         </Nav>
         <ul className={styles.infoBtn}>
-          <li>Info</li>
+          <li>
+            <a>Info</a>
+          </li>
         </ul>
       </Navbar.Collapse>
     </Navbar>
