@@ -9,6 +9,5 @@ import pImg5 from '../../assets/potfolioImages/pImg5.jpg';
 import pImg6 from '../../assets/potfolioImages/pImg6.jpg';
 import pImg7 from '../../assets/potfolioImages/pImg7.jpg';
 import pImg8 from '../../assets/potfolioImages/pImg8.jpg';
-import pImg9 from '../../assets/potfolioImages/pImg9.jpg';
 
 export default [pImg1, pImg2, pImg3, pImg4, pImg5, pImg6, pImg7, pImg8];

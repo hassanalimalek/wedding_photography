@@ -1,8 +1,7 @@
 import React from 'react';
 import styles from '../../css/footer.module.scss';
-import cx from 'classnames';
 import {Container, Row, Col} from 'react-bootstrap';
-import {FaFacebookF, FaInstagramSquare, FaYoutube} from 'react-icons/fa';
+import {FaFacebookF, FaYoutube} from 'react-icons/fa';
 import {FiSmartphone} from 'react-icons/fi';
 import {GoLocation} from 'react-icons/go';
 import {AiOutlineMail, AiFillInstagram} from 'react-icons/ai';

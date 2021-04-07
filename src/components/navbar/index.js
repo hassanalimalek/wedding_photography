@@ -8,7 +8,7 @@ function Index() {
   return (
     <Navbar bg="light" expand="lg" className={styles.navbar}>
       <Navbar.Brand href="#home">
-        <img className={styles.brandLogo} src={logo}></img>
+        <img alt="Camera Logo" className={styles.brandLogo} src={logo}></img>
       </Navbar.Brand>
       <Navbar.Toggle
         aria-controls="basic-navbar-nav"
@@ -21,24 +21,14 @@ function Index() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className={cx(styles.mainNavOptions, 'm-auto md-m')}>
           <ul>
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>Pages</a>
-            </li>
-            <li>
-              <a>Portfolio</a>
-            </li>
-            <li>
-              <a>Gallery</a>
-            </li>
+            <li>Home</li>
+            <li>Pages</li>
+            <li>Portfolio</li>
+            <li>Gallery</li>
           </ul>
         </Nav>
         <ul className={styles.infoBtn}>
-          <li>
-            <a>Info</a>
-          </li>
+          <li>Info</li>
         </ul>
       </Navbar.Collapse>
     </Navbar>

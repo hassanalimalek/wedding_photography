@@ -8,18 +8,17 @@ import img4 from '../../assets/generalImages/img4.jpg';
 // Image Effect
 import Fade from 'react-reveal/Fade';
 import {Container, Row, Col} from 'react-bootstrap';
-import {AnimationWrapper} from 'react-hover-animation';
 
 function Index() {
   // Getting Image with the fade and hover scale animation
   let getImage = (imgName, fadeEffect) => {
     return fadeEffect === 'left' ? (
       <Fade left>
-        <img src={imgName} />
+        <img alt="Wedding 1" src={imgName} />
       </Fade>
     ) : (
       <Fade right>
-        <img src={imgName} />
+        <img alt="Wedding  2" src={imgName} />
       </Fade>
     );
   };

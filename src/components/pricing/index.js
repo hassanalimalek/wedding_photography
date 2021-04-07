@@ -23,7 +23,11 @@ function Index() {
                     <Col>
                       <div className={styles.pricingContainer}>
                         <span>
-                          <img className={styles.pkrLogo} src={pkrLogo}></img>
+                          <img
+                            alt="Pkr Logo"
+                            className={styles.pkrLogo}
+                            src={pkrLogo}
+                          ></img>
                         </span>
                         <span className={styles.pricingTxt}>5000 </span>
                       </div>
@@ -76,7 +80,11 @@ function Index() {
                     <Col>
                       <div className={styles.pricingContainer}>
                         <span>
-                          <img className={styles.pkrLogo} src={pkrLogo}></img>
+                          <img
+                            alt="Pkr Logo"
+                            className={styles.pkrLogo}
+                            src={pkrLogo}
+                          ></img>
                         </span>
                         <span className={styles.pricingTxt}>15,000 </span>
                       </div>
@@ -129,7 +137,11 @@ function Index() {
                     <Col>
                       <div className={styles.pricingContainer}>
                         <span>
-                          <img className={styles.pkrLogo} src={pkrLogo}></img>
+                          <img
+                            alt="Pkr Logo"
+                            className={styles.pkrLogo}
+                            src={pkrLogo}
+                          ></img>
                         </span>
                         <span className={styles.pricingTxt}>10,000 </span>
                       </div>

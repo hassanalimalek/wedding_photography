@@ -20,13 +20,11 @@ ul {
 .mainNavOptions {
   li {
     display: inline-block;
-  }
-  a {
     margin-right: 1.5rem;
     padding-bottom: 0.25rem;
     cursor: pointer;
   }
-  a:hover {
+  li:hover {
     border-bottom: 1px solid #111;
   }
 }

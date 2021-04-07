@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '../../css/picturePortfolio.module.scss';
-import img1 from '../../assets/generalImages/img3.jpg';
 import portFolioImages from './imagesImport';
 
 import {Container, Row, Col} from 'react-bootstrap';
@@ -11,7 +10,7 @@ function Index() {
     for (let i = 0; i < 8; i++) {
       x.push(
         <Col xs={6} sm={4} md={3} className={styles.picture}>
-          <img src={portFolioImages[i]}></img>
+          <img alt="Wedding " src={portFolioImages[i]}></img>
         </Col>
       );
     }

@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styles from '../../css/sampleVideo.module.scss';
-import cx from 'classnames';
+
 import thumbnailImage from '../../assets/generalImages/img1.jpg';
 import sampleVideo from '../../assets/videos/video1.mp4';
 
@@ -8,8 +8,6 @@ import ReactPlayer from 'react-player/lazy';
 import Ticker from '../countUpComponent/index';
 
 function Index() {
-  const [viewPortEntered, setViewPortEntered] = useState(false);
-
   // Play Icon
   let getIcon = () => {
     return (
