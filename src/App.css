@@ -12,6 +12,8 @@
 
 .scrollTop {
   position: fixed;
+  /* padding: 0.5rem; */
+  color: #f94144;
   right: 5%;
   width: 5%;
   min-width: 30px;
