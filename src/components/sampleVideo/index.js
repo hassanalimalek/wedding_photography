@@ -1,9 +1,7 @@
 import React from 'react';
 import styles from '../../css/sampleVideo.module.scss';
 
-import thumbnailImage from '../../assets/generalImages/img1.jpg';
-import sampleVideo from '../../assets/videos/video1.mp4';
-
+import thumbnailImage from '../../assets/videos/videoThumbnail.jpg';
 import ReactPlayer from 'react-player/lazy';
 import Ticker from '../countUpComponent/index';
 
@@ -66,7 +64,7 @@ function Index() {
             playing
             light={thumbnailImage}
             controls={true}
-            url={sampleVideo}
+            url="https://www.youtube.com/watch?v=FUNrldZART4"
             playIcon={getIcon()}
           />
         </div>

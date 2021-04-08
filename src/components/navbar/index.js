@@ -35,11 +35,11 @@ function Index() {
             </li>
           </ul>
         </Nav>
-        <ul className={styles.infoBtn}>
+        {/* <ul className={styles.infoBtn}>
           <li>
             <a>Info</a>
           </li>
-        </ul>
+        </ul> */}
       </Navbar.Collapse>
     </Navbar>
   );

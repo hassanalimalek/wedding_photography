@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../css/footer.module.scss';
+import cx from 'classnames';
 import {Container, Row, Col} from 'react-bootstrap';
 import {FaFacebookF, FaYoutube} from 'react-icons/fa';
 import {FiSmartphone} from 'react-icons/fi';
@@ -30,7 +31,9 @@ function Index() {
                   <span className={styles.icon}>
                     <AiOutlineMail />
                   </span>
-                  <p className={styles.iconTxt}>support@email.com</p>
+                  <p className={cx(styles.iconTxt, styles.iconTxtMail)}>
+                    support@email.com
+                  </p>
                 </div>
               </div>
             </Col>

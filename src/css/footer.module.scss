@@ -8,8 +8,9 @@
   padding: 1rem 0;
 }
 .footerDivOne {
-  //   border: 1px solid red;
-  //   margin-bottom: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .iconDiv {
@@ -18,22 +19,24 @@
 .icon {
   font-size: 1.2rem;
   margin-right: 1.5rem;
+  margin: 0.5rem !important;
 }
 .icon:hover {
-  color: green;
+  color: red;
 }
 .iconTxt {
   font-size: 1.2rem;
+  padding: 0 !important;
+  margin: 0.5rem !important;
   align-self: center;
   font-family: 'Lato', sans-serif;
   letter-spacing: 0.075rem;
   font-weight: 300;
-  padding-top: 0.1rem;
-  //   border: 1px solid red;
 }
 
+// Footer Div Two
 .footerDivTwo {
-  //   border: 1px solid red;
+  padding: 0.5rem 0.5rem 0 0.5rem;
 }
 .aboutTitle {
   font-weight: 400;
