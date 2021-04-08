@@ -12,7 +12,7 @@ function Index() {
     <div className={styles.footer}>
       <div className={styles.footerWrapper}>
         <Container fluid>
-          <Row>
+          <Row className="align-items-center">
             <Col xs={12} sm={6}>
               <div className={styles.footerDivOne}>
                 <div className={styles.iconDiv}>
@@ -41,8 +41,10 @@ function Index() {
               <div className={styles.footerDivTwo}>
                 <h2 className={styles.aboutTitle}>About The Company</h2>
                 <p className={styles.aboutParagraph}>
-                  Lorem Ipsum orem Ipsum Lorem Ipsum orem Ipsum Lorem Ipsum orem
-                  Ipsum Lorem Ipsum orem Ipsum Lorem Ipsum orem Ipsum Lorem
+                  Z Photography is a team of Professional Photographers,
+                  Videographers and Visualizers bringing with them varied
+                  interests and skill sets that collaborate to document weddings
+                  in a unique and cohesive way.
                 </p>
                 <div className={styles.socialIcons}>
                   <h4 className={styles.fbIcon}>
