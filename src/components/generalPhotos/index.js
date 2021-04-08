@@ -5,22 +5,11 @@ import img1 from '../../assets/generalImages/img1.jpg';
 import img2 from '../../assets/generalImages/img2.jpg';
 import img3 from '../../assets/generalImages/img3.jpg';
 import img4 from '../../assets/generalImages/img4.jpg';
-import test from '../../assets/test.jpeg';
 // Image Effect
 import Fade from 'react-reveal/Fade';
 import {Container, Row, Col} from 'react-bootstrap';
 
 function Index() {
-  // Getting Image with the fade and hover scale animation
-  // let getImage = (imgName, fadeEffect) => {
-  //   return fadeEffect === 'left' ? (
-
-  //     // <Fade right>
-  //     <img alt="Wedding  2" src={imgName} />
-  //     // </Fade>
-  //   );
-  // };
-
   return (
     <div className={styles.generalPhotos}>
       <div className={styles.topSection}>

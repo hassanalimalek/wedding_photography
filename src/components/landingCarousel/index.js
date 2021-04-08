@@ -7,14 +7,9 @@ import {Carousel} from 'react-bootstrap';
 import styled, {keyframes} from 'styled-components';
 import {fadeInUp} from 'react-animations';
 
-import test from '../../assets/test.jpeg';
-
-// import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
-// import {Carousel} from 'react-responsive-carousel';
-
 function Index() {
+  // Fade Up Animation
   const fadeInUpAnimation = keyframes`${fadeInUp}`;
-
   const FadeInUpDiv = styled.div`
     animation: 2s ${fadeInUpAnimation};
   `;

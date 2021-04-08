@@ -8,9 +8,9 @@ function Index() {
     console.log('Form submit');
   };
   return (
-    <div className={styles.getInTouch}>
+    <div className={styles.getInTouch} id="contact">
       <div className={styles.getInTouchWrapper}>
-        <h1 className={styles.title}>GET IN TOUCH</h1>
+        <h1 className={styles.title}>Get In Touch</h1>
         <p className={styles.subtitle}>Follow our latest Stories</p>
         <Container fluid className={styles.form}>
           <form onSubmit={formSubmit}>

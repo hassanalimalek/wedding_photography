@@ -6,6 +6,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Lato', sans-serif;
 }
@@ -39,4 +42,58 @@ body {
     transform: rotate(360deg);
   }
 }
-/* Button Animation */
+
+/* Pricing Carts */
+
+.Basic {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: all 1s;
+}
+.Basic .pricingPlanTitle {
+  background-color: #f72585;
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+.Basic .pricingDetails {
+  padding: 2rem;
+}
+.Basic:hover {
+  box-shadow: 20px 30px 42px rgba(0, 0, 0, 0.25),
+    0 30px 30px rgba(0, 0, 0, 0.25);
+}
+
+.Standard {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: 1s all;
+}
+.Standard .pricingPlanTitle {
+  background-color: #4cc9f0;
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+.Standard .pricingDetails {
+  padding: 2rem;
+}
+.Standard:hover {
+  box-shadow: 20px 30px 42px rgba(0, 0, 0, 0.25),
+    0 30px 30px rgba(0, 0, 0, 0.25);
+}
+
+.Premium {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transition: all 1s;
+}
+.Premium .pricingPlanTitle {
+  background-color: #3a0ca3;
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+.Premium .pricingDetails {
+  padding: 2rem 2rem 3rem 2rem;
+}
+.Premium:hover {
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3), 0 30px 35px rgba(0, 0, 0, 0.25);
+}

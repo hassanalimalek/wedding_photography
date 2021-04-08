@@ -8,6 +8,7 @@ import Pricing from './components/pricing';
 import PicturePortfolio from './components/picturePorfolio';
 import GetInTouchForm from './components/getInTouchForm';
 import Footer from './components/footer';
+import ScrollUpBtn from './components/scrollUpBtn';
 
 function App(props) {
   useEffect(() => {
@@ -24,6 +25,7 @@ function App(props) {
       <Pricing />
       <GetInTouchForm />
       <Footer />
+      <ScrollUpBtn />
     </div>
   );
 }

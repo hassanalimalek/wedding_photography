@@ -1,7 +1,7 @@
 // Landing Carousel
 
 .landingCarouselContainer {
-  padding-top: 58px;
+  // padding-top: 58px;
   height: 100vh !important;
 }
 .carousel {
@@ -16,20 +16,14 @@
 .carouselItem1 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url('../assets/sliderImages/slider1.jpg') no-repeat center/cover fixed !important;
-  // background: no-repeat;
-  // background-size: cover;
 }
 .carouselItem2 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url('../assets/sliderImages/slider2.jpg') no-repeat center/cover fixed !important;
-  // background: no-repeat;
-  // background-size: cover;
 }
 .carouselItem3 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url('../assets/sliderImages/slider3.jpg') no-repeat center/cover fixed !important;
-  // background: no-repeat;
-  // background-size: cover;
 }
 
 // Carousel Item Text
@@ -96,6 +90,22 @@
       width: 100%;
       height: 100%;
       // border-color:white;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .caption {
+    height: 60vh;
+    letter-spacing: 0.05rem;
+    h1 {
+      font-family: 'Dancing Script';
+      font-size: 3rem;
+    }
+    p {
+      font-weight: 300;
+      font-size: 1.25rem;
+      margin-bottom: 2.5rem;
     }
   }
 }

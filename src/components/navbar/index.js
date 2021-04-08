@@ -6,7 +6,7 @@ import {Navbar, Nav} from 'react-bootstrap';
 
 function Index() {
   return (
-    <Navbar bg="light" expand="lg" className={styles.navbar}>
+    <Navbar bg="light" expand="lg" className={styles.navbar} id="home">
       <Navbar.Brand href="#home">
         <img alt="Camera Logo" className={styles.brandLogo} src={logo}></img>
       </Navbar.Brand>
@@ -22,16 +22,19 @@ function Index() {
         <Nav className={cx(styles.mainNavOptions, 'm-auto md-m')}>
           <ul>
             <li>
-              <a>Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a>Pages</a>
+              <a href="#gallery">Gallery</a>
             </li>
             <li>
-              <a>Portfolio</a>
+              <a href="#packages">Packages</a>
             </li>
             <li>
-              <a>Gallery</a>
+              <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a href="#aboutUs">About Us</a>
             </li>
           </ul>
         </Nav>

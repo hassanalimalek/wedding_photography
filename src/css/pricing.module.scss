@@ -26,13 +26,18 @@
   font-size: 1.6rem;
   margin-bottom: 4rem;
 }
+.pricingDetails {
+  display: grid;
+  place-items: center;
+  // border: 1px solid orangered;
+  text-align: center;
+}
 .pricingPlans {
-  //   border: 1px solid #111;
   width: 100%;
 }
 .pricingPlan {
-  //   border: 1px solid #111;
   margin-bottom: 2rem;
+
   h2 {
     font-family: cormorant garamond, serif;
   }
@@ -45,18 +50,22 @@
   }
 }
 .pricingContainer {
+  width: 90%;
+  border: 1px solid limegreen;
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .pricingTxt {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  // border: 1px dotted blue;
   font-family: 'Merriweather', serif;
   align-self: center;
-  margin-left: 1rem;
 }
 .pkrLogo {
-  width: 55px !important;
+  width: 3rem !important;
+  margin-right: 1.5rem;
+  // border: 1px dotted orange;
 }
 .checkIcon {
   font-size: 1.5rem;
@@ -67,59 +76,45 @@
   font-size: 1.5rem;
 }
 
-// Pricing Plan Basic
-.pricingPlanBasic {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: all 1s;
-  .pricingPlanTitle {
-    background-color: #f72585;
-    color: white;
-    padding: 1rem 0;
-    margin-bottom: 1rem;
-  }
-  .pricingDetails {
-    padding: 2rem;
-  }
+.feautures {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+  // border: 1px solid black;
 }
-.pricingPlanBasic:hover {
-  box-shadow: 20px 30px 42px rgba(0, 0, 0, 0.25),
-    0 30px 30px rgba(0, 0, 0, 0.25);
-}
-
-// Pricing Plan Standard
-.pricingPlanStandard {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: 1s all;
-  .pricingPlanTitle {
-    background-color: #4cc9f0;
-    color: white;
-    padding: 1rem 0;
-    margin-bottom: 1rem;
+.feautureRow {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  .iconDiv {
+    margin-right: 0.75rem;
+    flex: 1;
+    margin-top: 0.1rem;
+    text-align: right;
   }
-  .pricingDetails {
-    padding: 2rem;
+  .iconTxt {
+    flex: 1.55;
+    text-align: left;
   }
-}
-.pricingPlanStandard:hover {
-  box-shadow: 20px 30px 42px rgba(0, 0, 0, 0.25),
-    0 30px 30px rgba(0, 0, 0, 0.25);
 }
 
-// Pricing Plan Premium
-.pricingPlanPremium {
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  transition: all 1s;
-
-  .pricingPlanTitle {
-    background-color: #3a0ca3;
-    color: white;
-    padding: 1rem 0;
-    margin-bottom: 1rem;
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
   }
-  .pricingDetails {
-    padding: 2rem 2rem 3rem 2rem;
+  .subtitle {
+    font-size: 1.25rem;
   }
-}
-.pricingPlanPremium:hover {
-  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3), 0 30px 35px rgba(0, 0, 0, 0.25);
+  .pricingTxt {
+    font-size: 1.5rem;
+  }
+  .pkrLogo {
+    width: 2.5rem !important;
+    margin-right: 0.5rem;
+  }
+  .feautureRow {
+    width: 90%;
+  }
 }

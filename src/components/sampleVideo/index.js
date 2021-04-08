@@ -52,8 +52,8 @@ function Index() {
       <div className={styles.sampleVideoWrapper}>
         <div className={styles.txtDiv}>
           <p>
-            LIVE YOUR MAGIC AND SAVE YOUR PRECIOUS LOVE MEMORIES! OUR TEAM OF
-            PROFESSIONAL PHOTOGRAPHERS IS HERE TO HELP YOU
+            Live your magic and save your preciouse love memories. Our team of
+            professional photographers is here to help you.
           </p>
         </div>
         <div className={styles.videoDiv}>
@@ -68,25 +68,25 @@ function Index() {
             playIcon={getIcon()}
           />
         </div>
-        <div className={styles.countUpDiv}>
-          <h2 className={styles.countUpItem}>
+        <div className={styles.countUpDivs}>
+          <div className={styles.countUpItem}>
             <span>
               <Ticker className={styles.count} end={600} />
             </span>
-            Photos Clicked
-          </h2>
-          <h2 className={styles.countUpItem}>
+            <h3>Photos Clicked</h3>
+          </div>
+          <div className={styles.countUpItem}>
             <span>
               <Ticker className={styles.count} end={50} />
             </span>
-            Ceremonies
-          </h2>
-          <h2 className={styles.countUpItem}>
+            <h3>Ceremonies</h3>
+          </div>
+          <div className={styles.countUpItem}>
             <span>
               <Ticker className={styles.count} end={30} />
             </span>
-            New Couples
-          </h2>
+            <h3>New Couples</h3>
+          </div>
         </div>
       </div>
     </div>

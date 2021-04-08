@@ -9,7 +9,7 @@ import {AiOutlineMail, AiFillInstagram} from 'react-icons/ai';
 
 function Index() {
   return (
-    <div className={styles.footer}>
+    <div className={styles.footer} id="aboutUs">
       <div className={styles.footerWrapper}>
         <Container fluid>
           <Row className="align-items-center">

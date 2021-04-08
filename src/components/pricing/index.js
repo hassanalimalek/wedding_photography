@@ -2,185 +2,106 @@ import React from 'react';
 import styles from '../../css/pricing.module.scss';
 import cx from 'classnames';
 import {Container, Row, Col} from 'react-bootstrap';
-import {FaCheckCircle, FaTimesCircle} from 'react-icons/fa';
+import {FaCcDiscover, FaCheckCircle, FaTimesCircle} from 'react-icons/fa';
 import pkrLogo from '../../assets/logos/pkr.png';
 
 function Index() {
+  let getPricingCart = (
+    pricingCategory,
+    price,
+    photographer,
+    videographer,
+    drone,
+    cinematicFootage
+  ) => {
+    console.log(pricingCategory);
+    return (
+      <div className={cx(styles.pricingPlan, pricingCategory)}>
+        <div className="pricingPlanTitle">
+          <h2>{pricingCategory}</h2>
+          {/* <div className={styles.pricingContainer}>
+            <span className={styles.pricingTxt}>
+              <span>
+                <img
+                  alt="Pkr Logo"
+                  className={styles.pkrLogo}
+                  src={pkrLogo}
+                ></img>
+              </span>
+              {price}
+            </span>
+          </div> */}
+        </div>
+        <Container fluid className={styles.pricingDetails}>
+          <div className={styles.feautures}>
+            <div className={styles.feautureRow}>
+              <div className={styles.iconDiv}>
+                {photographer == true ? (
+                  <FaCheckCircle className={styles.checkIcon} />
+                ) : (
+                  <FaTimesCircle className={styles.crossIcon} />
+                )}
+              </div>
+              <div className={styles.iconTxt}>
+                <p>Photographer</p>
+              </div>
+            </div>
+            <div className={styles.feautureRow}>
+              <div className={styles.iconDiv}>
+                {videographer == true ? (
+                  <FaCheckCircle className={styles.checkIcon} />
+                ) : (
+                  <FaTimesCircle className={styles.crossIcon} />
+                )}
+              </div>
+              <div className={styles.iconTxt}>
+                <p>VideoGrapher</p>
+              </div>
+            </div>
+            <div className={styles.feautureRow}>
+              <div className={styles.iconDiv}>
+                {drone == true ? (
+                  <FaCheckCircle className={styles.checkIcon} />
+                ) : (
+                  <FaTimesCircle className={styles.crossIcon} />
+                )}
+              </div>
+              <div className={styles.iconTxt}>
+                <p>Drone</p>
+              </div>
+            </div>
+            <div className={styles.feautureRow}>
+              <div className={styles.iconDiv}>
+                {cinematicFootage == true ? (
+                  <FaCheckCircle className={styles.checkIcon} />
+                ) : (
+                  <FaTimesCircle className={styles.crossIcon} />
+                )}
+              </div>
+              <div className={styles.iconTxt}>
+                <p>Cinematic Footage</p>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </div>
+    );
+  };
   return (
-    <div className={styles.pricing}>
+    <div className={styles.pricing} id="packages">
       <div className={styles.pricingWrapper}>
-        <h1 className={styles.title}>PRICING PLANS</h1>
+        <h1 className={styles.title}>Pricing Plans</h1>
         <p className={styles.subtitle}>Best Prices in town</p>
         <Container fluid className={styles.pricingPlans}>
           <Row>
             <Col md={4}>
-              <div className={cx(styles.pricingPlan, styles.pricingPlanBasic)}>
-                <div className={styles.pricingPlanTitle}>
-                  <h2>Basic</h2>
-                </div>
-                <Container className={styles.pricingDetails}>
-                  <Row>
-                    <Col>
-                      <div className={styles.pricingContainer}>
-                        <span>
-                          <img
-                            alt="Pkr Logo"
-                            className={styles.pkrLogo}
-                            src={pkrLogo}
-                          ></img>
-                        </span>
-                        <span className={styles.pricingTxt}>5000 </span>
-                      </div>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col xs={4}>
-                      <FaCheckCircle className={styles.checkIcon} />
-                    </Col>
-                    <Col xs={8}>
-                      <p>Photographer</p>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col xs={4}>
-                      <FaCheckCircle className={styles.checkIcon} />
-                    </Col>
-                    <Col xs={8}>
-                      <p>Videographer</p>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col xs={4}>
-                      <FaTimesCircle className={styles.crossIcon} />
-                    </Col>
-                    <Col xs={8}>
-                      <p>Drone</p>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col xs={4}>
-                      <FaTimesCircle className={styles.crossIcon} />
-                    </Col>
-                    <Col xs={8}>
-                      <p>Cinematic Footage</p>
-                    </Col>
-                  </Row>
-                </Container>
-              </div>
+              {getPricingCart('Basic', '10,000', true, true, false, false)}
             </Col>
             <Col md={4}>
-              <div
-                className={cx(styles.pricingPlan, styles.pricingPlanPremium)}
-              >
-                <div className={styles.pricingPlanTitle}>
-                  <h2>Premium</h2>
-                </div>
-                <Container className={styles.pricingDetails}>
-                  <Row>
-                    <Col>
-                      <div className={styles.pricingContainer}>
-                        <span>
-                          <img
-                            alt="Pkr Logo"
-                            className={styles.pkrLogo}
-                            src={pkrLogo}
-                          ></img>
-                        </span>
-                        <span className={styles.pricingTxt}>15,000 </span>
-                      </div>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col xs={4}>
-                      <FaCheckCircle className={styles.checkIcon} />
-                    </Col>
-                    <Col xs={8}>
-                      <p>Photographer</p>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col xs={4}>
-                      <FaCheckCircle className={styles.checkIcon} />
-                    </Col>
-                    <Col xs={8}>
-                      <p>Videographer</p>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col xs={4}>
-                      <FaCheckCircle className={styles.checkIcon} />
-                    </Col>
-                    <Col xs={8}>
-                      <p>Drone</p>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col xs={4}>
-                      <FaCheckCircle className={styles.checkIcon} />
-                    </Col>
-                    <Col xs={8}>
-                      <p>Cinematic Footage</p>
-                    </Col>
-                  </Row>
-                </Container>
-              </div>
+              {getPricingCart('Premium', '35,000', true, true, true, true)}
             </Col>
             <Col md={4}>
-              <div
-                className={cx(styles.pricingPlan, styles.pricingPlanStandard)}
-              >
-                <div className={styles.pricingPlanTitle}>
-                  <h2>Standard</h2>
-                </div>
-                <Container className={styles.pricingDetails}>
-                  <Row>
-                    <Col>
-                      <div className={styles.pricingContainer}>
-                        <span>
-                          <img
-                            alt="Pkr Logo"
-                            className={styles.pkrLogo}
-                            src={pkrLogo}
-                          ></img>
-                        </span>
-                        <span className={styles.pricingTxt}>10,000 </span>
-                      </div>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col xs={4}>
-                      <FaCheckCircle className={styles.checkIcon} />
-                    </Col>
-                    <Col xs={8}>
-                      <p>Photographer</p>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col xs={4}>
-                      <FaCheckCircle className={styles.checkIcon} />
-                    </Col>
-                    <Col xs={8}>
-                      <p>Videographer</p>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col xs={4}>
-                      <FaCheckCircle className={styles.checkIcon} />
-                    </Col>
-                    <Col xs={8}>
-                      <p>Drone</p>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col xs={4}>
-                      <FaTimesCircle className={styles.crossIcon} />
-                    </Col>
-                    <Col xs={8}>
-                      <p>Cinematic Footage</p>
-                    </Col>
-                  </Row>
-                </Container>
-              </div>
+              {getPricingCart('Standard', '20,000', true, true, true, false)}
             </Col>
           </Row>
         </Container>

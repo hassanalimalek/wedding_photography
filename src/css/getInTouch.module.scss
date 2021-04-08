@@ -14,14 +14,13 @@
 .title {
   font-size: 2.5rem;
   font-family: cormorant garamond, serif;
-  font-size: 35px;
   line-height: 1.3em;
   letter-spacing: 0.2em;
 }
 .subtitle {
   text-transform: none;
   font-style: italic;
-  color: #84847c;
+  color: #111;
   font-family: cormorant garamond, serif;
   font-size: 1.5rem;
 }
@@ -65,7 +64,7 @@
   font-weight: 500;
   letter-spacing: 0.15rem;
   line-height: calc(26px - (0px - 2px));
-  color: #84847c;
+  color: #111;
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid #e1e1e1;
@@ -76,7 +75,7 @@
 }
 .formInput::placeholder,
 .formTextArea::placeholder {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .formSubmitBtn {
@@ -99,5 +98,11 @@
   }
   .formTextArea {
     width: 100%;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.25rem;
   }
 }

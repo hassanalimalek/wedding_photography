@@ -18,7 +18,7 @@ function Index() {
   };
   console.log(portFolioImages);
   return (
-    <div className={styles.picturePortfolio}>
+    <div className={styles.picturePortfolio} id="gallery">
       <h1 className={styles.title}>Memories Created</h1>
       <Container fluid className={styles.picturesSection}>
         <Row>{getImages()}</Row>
