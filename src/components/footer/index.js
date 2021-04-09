@@ -19,20 +19,25 @@ function Index() {
                   <span className={styles.icon}>
                     <GoLocation />
                   </span>
-                  <p className={styles.iconTxt}>Revolution Stree France</p>
+                  <p className={styles.iconTxt}>
+                    Office #6, 2nd Floor, Shaheen Plaza, Chandni Chowk Rwp
+                  </p>
                 </div>
                 <div className={styles.iconDiv}>
                   <span className={styles.icon}>
                     <FiSmartphone />
                   </span>
-                  <p className={styles.iconTxt}>+92313141414</p>
+                  <div>
+                    <h5 className={styles.iconTxt}>0333-5270101</h5>
+                    <h5 className={styles.iconTxt}>0345-5270101</h5>
+                  </div>
                 </div>
                 <div className={styles.iconDiv}>
                   <span className={styles.icon}>
                     <AiOutlineMail />
                   </span>
                   <p className={cx(styles.iconTxt, styles.iconTxtMail)}>
-                    support@email.com
+                    Shahidbalte@gmail.com
                   </p>
                 </div>
               </div>
@@ -41,10 +46,10 @@ function Index() {
               <div className={styles.footerDivTwo}>
                 <h2 className={styles.aboutTitle}>About The Company</h2>
                 <p className={styles.aboutParagraph}>
-                  Z Photography is a team of Professional Photographers,
-                  Videographers and Visualizers bringing with them varied
-                  interests and skill sets that collaborate to document weddings
-                  in a unique and cohesive way.
+                  Balti Studio is a team of Professional Photographers,
+                  Videographers bringing with them varied interests and skill
+                  sets that collaborate to document weddings in a unique and
+                  cohesive way.
                 </p>
                 <div className={styles.socialIcons}>
                   <h4 className={styles.fbIcon}>

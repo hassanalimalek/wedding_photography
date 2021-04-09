@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../../css/pricing.module.scss';
 import cx from 'classnames';
 import {Container, Row, Col} from 'react-bootstrap';
-import {FaCcDiscover, FaCheckCircle, FaTimesCircle} from 'react-icons/fa';
+import {FaCheckCircle, FaTimesCircle} from 'react-icons/fa';
 import pkrLogo from '../../assets/logos/pkr.png';
 
 function Index() {
@@ -19,7 +19,9 @@ function Index() {
       <div className={cx(styles.pricingPlan, pricingCategory)}>
         <div className="pricingPlanTitle">
           <h2>{pricingCategory}</h2>
-          {/* <div className={styles.pricingContainer}>
+        </div>
+        <Container fluid className={styles.pricingDetails}>
+          <div className={styles.pricingContainer}>
             <span className={styles.pricingTxt}>
               <span>
                 <img
@@ -30,13 +32,11 @@ function Index() {
               </span>
               {price}
             </span>
-          </div> */}
-        </div>
-        <Container fluid className={styles.pricingDetails}>
+          </div>
           <div className={styles.feautures}>
             <div className={styles.feautureRow}>
               <div className={styles.iconDiv}>
-                {photographer == true ? (
+                {photographer === true ? (
                   <FaCheckCircle className={styles.checkIcon} />
                 ) : (
                   <FaTimesCircle className={styles.crossIcon} />
@@ -48,7 +48,7 @@ function Index() {
             </div>
             <div className={styles.feautureRow}>
               <div className={styles.iconDiv}>
-                {videographer == true ? (
+                {videographer === true ? (
                   <FaCheckCircle className={styles.checkIcon} />
                 ) : (
                   <FaTimesCircle className={styles.crossIcon} />
@@ -60,7 +60,7 @@ function Index() {
             </div>
             <div className={styles.feautureRow}>
               <div className={styles.iconDiv}>
-                {drone == true ? (
+                {drone === true ? (
                   <FaCheckCircle className={styles.checkIcon} />
                 ) : (
                   <FaTimesCircle className={styles.crossIcon} />
@@ -72,7 +72,7 @@ function Index() {
             </div>
             <div className={styles.feautureRow}>
               <div className={styles.iconDiv}>
-                {cinematicFootage == true ? (
+                {cinematicFootage === true ? (
                   <FaCheckCircle className={styles.checkIcon} />
                 ) : (
                   <FaTimesCircle className={styles.crossIcon} />
