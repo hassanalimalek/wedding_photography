@@ -53,6 +53,7 @@ body {
   background-color: #f72585;
   color: white;
   padding: 1rem 0;
+  text-align: center;
   margin-bottom: 1rem;
 }
 .Basic .pricingDetails {
@@ -72,6 +73,7 @@ body {
   color: white;
   padding: 1rem 0;
   margin-bottom: 1rem;
+  text-align: center;
 }
 .Standard .pricingDetails {
   padding: 2rem;
@@ -89,6 +91,7 @@ body {
   background-color: #3a0ca3;
   color: white;
   padding: 1rem 0;
+  text-align: center;
   margin-bottom: 1rem;
 }
 .Premium .pricingDetails {

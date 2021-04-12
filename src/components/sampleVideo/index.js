@@ -1,9 +1,9 @@
-import React from 'react';
-import styles from '../../css/sampleVideo.module.scss';
+import React from "react";
+import styles from "../../css/sampleVideo.module.scss";
 
-import thumbnailImage from '../../assets/videos/videoThumbnail.jpg';
-import ReactPlayer from 'react-player/lazy';
-import Ticker from '../countUpComponent/index';
+import thumbnailImage from "../../assets/videos/videoThumbnail.jpeg";
+import ReactPlayer from "react-player/lazy";
+import Ticker from "../countUpComponent/index";
 
 function Index() {
   // Play Icon

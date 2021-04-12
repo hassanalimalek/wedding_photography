@@ -1,9 +1,9 @@
-import React from 'react';
-import styles from '../../css/pricing.module.scss';
-import cx from 'classnames';
-import {Container, Row, Col} from 'react-bootstrap';
-import {FaCheckCircle, FaTimesCircle} from 'react-icons/fa';
-import pkrLogo from '../../assets/logos/pkr.png';
+import React from "react";
+import styles from "../../css/pricing.module.scss";
+import cx from "classnames";
+import { Container, Row, Col } from "react-bootstrap";
+import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import pkrLogo from "../../assets/logos/pkr.png";
 
 function Index() {
   let getPricingCart = (
@@ -35,52 +35,44 @@ function Index() {
           </div>
           <div className={styles.feautures}>
             <div className={styles.feautureRow}>
-              <div className={styles.iconDiv}>
+              <span className={styles.iconDiv}>
                 {photographer === true ? (
                   <FaCheckCircle className={styles.checkIcon} />
                 ) : (
                   <FaTimesCircle className={styles.crossIcon} />
                 )}
-              </div>
-              <div className={styles.iconTxt}>
-                <p>Photographer</p>
-              </div>
+              </span>
+              <span className={styles.iconTxt}>Photographer</span>
             </div>
             <div className={styles.feautureRow}>
-              <div className={styles.iconDiv}>
+              <span className={styles.iconDiv}>
                 {videographer === true ? (
                   <FaCheckCircle className={styles.checkIcon} />
                 ) : (
                   <FaTimesCircle className={styles.crossIcon} />
                 )}
-              </div>
-              <div className={styles.iconTxt}>
-                <p>VideoGrapher</p>
-              </div>
+              </span>
+              <span className={styles.iconTxt}>Videographer</span>
             </div>
             <div className={styles.feautureRow}>
-              <div className={styles.iconDiv}>
+              <span className={styles.iconDiv}>
                 {drone === true ? (
                   <FaCheckCircle className={styles.checkIcon} />
                 ) : (
                   <FaTimesCircle className={styles.crossIcon} />
                 )}
-              </div>
-              <div className={styles.iconTxt}>
-                <p>Drone</p>
-              </div>
+              </span>
+              <span className={styles.iconTxt}>Drone</span>
             </div>
             <div className={styles.feautureRow}>
-              <div className={styles.iconDiv}>
+              <span className={styles.iconDiv}>
                 {cinematicFootage === true ? (
                   <FaCheckCircle className={styles.checkIcon} />
                 ) : (
                   <FaTimesCircle className={styles.crossIcon} />
                 )}
-              </div>
-              <div className={styles.iconTxt}>
-                <p>Cinematic Footage</p>
-              </div>
+              </span>
+              <span className={styles.iconTxt}>Cinematic Footage</span>
             </div>
           </div>
         </Container>
@@ -95,13 +87,13 @@ function Index() {
         <Container fluid className={styles.pricingPlans}>
           <Row>
             <Col md={4}>
-              {getPricingCart('Basic', '10,000', true, true, false, false)}
+              {getPricingCart("Basic", "10,000", true, true, false, false)}
             </Col>
             <Col md={4}>
-              {getPricingCart('Premium', '35,000', true, true, true, true)}
+              {getPricingCart("Premium", "35,000", true, true, true, true)}
             </Col>
             <Col md={4}>
-              {getPricingCart('Standard', '20,000', true, true, true, false)}
+              {getPricingCart("Standard", "20,000", true, true, true, false)}
             </Col>
           </Row>
         </Container>

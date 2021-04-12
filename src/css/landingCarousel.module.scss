@@ -15,15 +15,15 @@
 }
 .carouselItem1 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('../assets/sliderImages/slider1.jpg') no-repeat center/cover fixed !important;
+    url("../assets/sliderImages/slider1.jpg") no-repeat center/cover fixed !important;
 }
 .carouselItem2 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('../assets/sliderImages/slider2.jpg') no-repeat center/cover fixed !important;
+    url("../assets/sliderImages/slider2.jpg") no-repeat center/cover fixed !important;
 }
 .carouselItem3 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('../assets/sliderImages/slider3.jpg') no-repeat center/cover fixed !important;
+    url("../assets/sliderImages/slider3.jpg") no-repeat center/cover fixed !important;
 }
 
 // Carousel Item Text
@@ -31,7 +31,7 @@
   height: 60vh;
   letter-spacing: 0.05rem;
   h1 {
-    font-family: 'Dancing Script';
+    font-family: "Dancing Script";
     font-size: 4rem;
   }
   p {
@@ -49,7 +49,7 @@
 // Carousel Btn
 .carouselBtn {
   cursor: pointer;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   position: relative;
   padding: 10px 20px;
@@ -61,7 +61,7 @@
   transition: all 1s;
   &:after,
   &:before {
-    content: ' ';
+    content: " ";
     width: 20px;
     height: 20px;
     position: absolute;
@@ -99,7 +99,7 @@
     height: 60vh;
     letter-spacing: 0.05rem;
     h1 {
-      font-family: 'Dancing Script';
+      font-family: "Dancing Script";
       font-size: 3rem;
     }
     p {
